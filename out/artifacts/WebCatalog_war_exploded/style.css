@@ -1,0 +1,10 @@
+
+
+.luxury a ,.sports a, .midsize a, .compact a{
+    color: lightblue;
+    text-decoration:none;
+    }
+.luxury ,.sports ,.midsize, .compact:link{
+    color: black;
+    
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+</head>
+<body>
+<form action="addProduct.jsp" method="post">
+Category:
+<select name="category">
+<option value="Luxury">Luxury Car</option>
+<option value="Sports">Sports Car</option>
+<option value="Midsize">Midsize/Large Car</option>
+<option value="Compact">Compact Car</option>
+</select> <br>
+Name <input type="text" name="name"> <br> <!--text boxes-->
+Price: <input type="price" name="price"> <br>
+Year <input type="year" name="year"> <br>
+Spec <input type="spec" name="spec"> <br>
+Photo <input type="photo" name="photo"> <br>
+<button type="submit" value="Register" onsubmit=checkForm(); onclick=location.href='addProduct.jsp'>
+Register </button>
+</form>
+
+</body>
+</html>
