@@ -14,8 +14,8 @@
 
 <body>
 
-<h1> Update Inventory <%= request.getParameter("id") %> </h1>
-<form method="post" action="updateSubmit.jsp">
+<h1> Update Inventory <%= request.getParameter("productID") %> </h1>
+<form method="post" action="updateProductSubmit.jsp">
     <input type="hidden" name="productID" value="<%= request.getParameter("productID") %>">
     Car Name: <input type="text" name="name" value="<%= request.getParameter("name") %>"><br>
     Category: <input type="text" name="category" value="<%= request.getParameter("category") %>"><br>

@@ -9,9 +9,9 @@
 <%@ page import="java.sql.*" %>
 <html>
 <head>
-    <title>Registered Students</title>
+    <title>Inventory</title>
 </head>
-<body class="viewAll">
+<body>
 <%
     //you need this for JDBC with MySQL in version 5
     Class.forName("com.mysql.jdbc.Driver");
@@ -45,24 +45,17 @@
         <td> <%= resultset.getString("photo") %></td>
         <td> <%= resultset.getString("spec") %></td>
         <td class="button">
-            <form method="post" action="updateForm.jsp">
-                <input type="hidden" name="id" value="<%= resultset.getString("productID") %>">
+            <form method="post" action="updateProduct.jsp">
+                <input type="hidden" name="productID" value="<%= resultset.getString("productID") %>">
                 <input type="hidden" name="name" value="<%= resultset.getString("name") %>">
-                <input type="hidden" name="class" value="<%= resultset.getString("category") %>">
-                <input type="hidden" name="email" value=" <%= resultset.getString("year") %>">
-                <input type="hidden" name="phone" value="<%= resultset.getString("price") %>">
-                <input type="hidden" name="phone" value="<%= resultset.getString("photo") %>">
-                <input type="hidden" name="phone" value="<%= resultset.getString("spec") %>">
+                <input type="hidden" name="category" value="<%= resultset.getString("category") %>">
+                <input type="hidden" name="year" value=" <%= resultset.getString("year") %>">
+                <input type="hidden" name="price" value="<%= resultset.getString("price") %>">
+                <input type="hidden" name="photo" value="<%= resultset.getString("photo") %>">
+                <input type="hidden" name="spec" value="<%= resultset.getString("spec") %>">
                 <input type="submit" value="Update">
             </form>
         </td>
-        <td class="button">
-            <form action="deleteSubmit.jsp" method="post">
-                <input type="hidden" name="id" value="<%= resultset.getString("id") %>">
-                <input type="submit" value="Delete">
-            </form>
-        </td>
-
     </TR>
         <% }
   //close connections after checking for result

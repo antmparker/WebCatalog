@@ -10,7 +10,7 @@
 
 <html>
 <head>
-    <title>Delete Customer</title>
+    <title>Delete Inventory Item</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
@@ -27,7 +27,7 @@
             "DELETE FROM inventory\n" +
                     "WHERE productID='" +
                     request.getParameter("productID") +
-                    "'");
+            "'");
 %>
 <h1>Car Deleted</h1>
 The Car (ID=<%= request.getParameter("productID") %>)
