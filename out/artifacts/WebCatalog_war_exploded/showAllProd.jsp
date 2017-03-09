@@ -11,7 +11,7 @@
 <head>
     <title>Registered Students</title>
 </head>
-<body>
+<body class="viewAll">
 <%
     //you need this for JDBC with MySQL in version 5
     Class.forName("com.mysql.jdbc.Driver");
