@@ -20,10 +20,9 @@
             "jdbc", // username
             "java1234"); //user password
     Statement statement = connection.createStatement();
-    ResultSet resultset = statement.executeQuery("SELECT category \n" +
+    ResultSet resultset = statement.executeQuery("SELECT DISTINCT category \n" +
             "FROM inventory " +
-            "WHERE category= " +
-            "WHERE category='" + resultset.getParameter("Luxury") + "'\n");
+            "WHERE category='" + request.getParameter("category") + "'\n");
 %>
 
 <table BORDER="1"> <%--creating a table for the query--%>
