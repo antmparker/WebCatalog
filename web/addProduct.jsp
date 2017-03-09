@@ -38,7 +38,7 @@ Thank you for regisering.
                     request.getParameter("year") + "','" +
                     request.getParameter("photo") + "','" +
                     request.getParameter("spec") +"');");
-    
+
     //cleaning up so as to not leave dangling connections close connections after checking for result
     if (statement != null) {
         statement.close();

@@ -38,12 +38,7 @@ Thank you for regisering.
                     request.getParameter("year") + "','" +
                     request.getParameter("photo") + "','" +
                     request.getParameter("spec") +"');");
-    <p>
-    <a href="#" onclick="window.history.back()">&leftarrow; Change Update</a>
-    </p>
-    <p>
-    <a href="showAllProd.jsp">&leftarrow; Back to index</a>
-    </p>
+
     //cleaning up so as to not leave dangling connections close connections after checking for result
     if (statement != null) {
         statement.close();

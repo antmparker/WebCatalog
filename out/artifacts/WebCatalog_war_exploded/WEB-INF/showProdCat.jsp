@@ -20,24 +20,31 @@
             "jdbc", // username
             "java1234"); //user password
     Statement statement = connection.createStatement();
-    ResultSet resultset = statement.executeQuery("SELECT DISTINCT category \n" +
+    ResultSet resultset = statement.executeQuery("SELECT DISTINCT productID, name, category, year, price, photo, spec \n" +
             "FROM inventory " +
             "WHERE category='" + request.getParameter("category") + "'\n");
 %>
 
 <table BORDER="1"> <%--creating a table for the query--%>
     <tr>
+        <th>ID</th>
+        <th>Name</th>
         <th>Category</th>
         <th>Year</th>
         <th>Price</th>
         <th>Photo</th>
         <th>Spec</th>
-        <th colspan="2">Edit</th>
     </tr>
         <% while(resultset != null && resultset.next()){ %>
     <TR>
 
+        <td> <%= resultset.getString("productID") %></td>
+        <td> <%= resultset.getString("name") %></td>
         <td> <%= resultset.getString("category") %></td>
+        <td> <%= resultset.getString("year") %></td>
+        <td> <%= resultset.getString("price") %></td>
+        <td> <%= resultset.getString("photo") %></td>
+        <td> <%= resultset.getString("spec") %></td>
 
     </TR>
         <% }
