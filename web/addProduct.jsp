@@ -12,7 +12,7 @@
     <title>Add Product</title>
 </head>
 <body>
-<h1>Invetory Updated</h1>
+<h1>Inventory Updated</h1>
 
 Name: <%= request.getParameter("name")%> <br>
 Category: <%= request.getParameter("category")%><br>
@@ -21,6 +21,8 @@ Year: <%= request.getParameter("year")%><br>
 Specs: <%= request.getParameter("spec")%><br>
 Photo: <%= request.getParameter("photo")%><br>
 Thank you for regisering.
+<button type="submit" value="Register" onclick=location.href='addProduct.html'>
+    Add Another </button>
 <%
     //you need this for JDBC with MySQL in version 5
     //even though youre not supposed to
