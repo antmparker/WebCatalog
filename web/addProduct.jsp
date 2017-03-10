@@ -10,8 +10,43 @@
 <html>
 <head>
     <title>Add Product</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline-block;
+        color: lightblue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: darkblue;
+    }
+
+
+</style>
+
+</head>
+<body>
+<ul>
+    <div class="nav">
+        <li><a href="HomePage.html">Home</a></li>
 <h1>Inventory Updated</h1>
 
 Name: <%= request.getParameter("name")%> <br>
@@ -20,7 +55,7 @@ Price: <%= request.getParameter("price")%><br>
 Year: <%= request.getParameter("year")%><br>
 Specs: <%= request.getParameter("spec")%><br>
 Photo: <%= request.getParameter("photo")%><br>
-Thank you for regisering.
+Car processed.
 <button type="submit" value="Register" onclick=location.href='addProduct.html'>
     Add Another </button>
 <%

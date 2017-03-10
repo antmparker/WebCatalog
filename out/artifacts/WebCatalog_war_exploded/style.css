@@ -1,10 +1,79 @@
+body {
+    font-family: 'Lato', serif;
+    font-size: 18px;
+}
+
+h1{
+    color: darkblue;
+    text-align: center;
 
 
-.luxury a ,.sports a, .midsize a, .compact a{
-    color: lightblue;
-    text-decoration:none;
-    }
-.luxury ,.sports ,.midsize, .compact:link{
-    color: black;
+}
+
+
+h2{
+    background-image: url("https://tinyurl.com/hfho4yy");
+    background-size: contain;
+
+}
+
+a.nav{
+
+}
+a.pt:link {
+    text-decoration: none;
+    color: darkblue;
+border-color: darkblue;
+}
+
+a.pt:visited {
+    text-decoration: none;
+}
+
+a.pt:hover {
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+}
+
+a.pt:active {
+    text-decoration: none;
+}
+
+img{
+    background-size: contain;
     
+}
+
+ table {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+input[type=submit] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=submit]:focus {
+    border-color:#333;
+    text-align: center;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }

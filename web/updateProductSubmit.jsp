@@ -1,20 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: user
-  Date: 3/9/17
-  Time: 11:17 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
 <html>
 <head>
 
     <title>Update Confirmed <%= request.getParameter("name") %>
-
     </title>
-
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 
 </head>
 <body>
@@ -38,20 +30,20 @@
     Statement statement = connection.createStatement();
 
     int result = statement.executeUpdate("UPDATE inventory\n" +
-                    "SET\n" +
-                    "name='" + request.getParameter("name") + "',\n" +
-                    "category='" + request.getParameter("category") + "',\n" +
-                    "year='" + request.getParameter("year") + "',\n" +
-                    "price='" + request.getParameter("price") + "',\n" +
-                    "spec='" + request.getParameter("spec") + "',\n" +
-                    "photo='" + request.getParameter("photo") + "'\n" +
-                    "WHERE productID='" + request.getParameter("productID") + "'\n");
+            "SET\n" +
+            "name='" + request.getParameter("name") + "',\n" +
+            "category='" + request.getParameter("category") + "',\n" +
+            "year='" + request.getParameter("year") + "',\n" +
+            "price='" + request.getParameter("price") + "',\n" +
+            "spec='" + request.getParameter("spec") + "',\n" +
+            "photo='" + request.getParameter("photo") + "'\n" +
+            "WHERE productID='" + request.getParameter("productID") + "'\n");
 
 %>
 
 
-
-<h1> Update Confirmed <%= request.getParameter("productID") %> </h1>
+<h1> Update Confirmed <%= request.getParameter("productID") %>
+</h1>
 <%= request.getParameter("name") %><br>
 <%= request.getParameter("category") %><br>
 <%= request.getParameter("year") %><br>

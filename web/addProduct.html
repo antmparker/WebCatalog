@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Product</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
+
 <form action="addProduct.jsp" method="post">
 Category:
 <select name="category">
@@ -13,14 +16,19 @@ Category:
 <option value="Midsize">Midsize/Large Car</option>
 <option value="Compact">Compact Car</option>
 </select> <br>
-Name <input type="text" name="name"> <br> <!--text boxes-->
+Make/Model: <input type="text" name="name"> <br> <!--text boxes-->
 Price: <input type="price" name="price"> <br>
 Year <input type="year" name="year"> <br>
 Spec <input type="spec" name="spec"> <br>
 Photo <input type="photo" name="photo"> <br>
 <button type="submit" value="Register"  onclick=location.href='addProduct.jsp'>
-Register </button>
+Add Car </button>
+
+
 </form>
 
+<p>
+    <a href="showAllProd.jsp">&leftarrow; Back to index</a>
+</p>
 </body>
 </html>
