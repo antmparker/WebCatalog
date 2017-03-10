@@ -18,7 +18,7 @@
 <form method="post" action="updateProductSubmit.jsp">
     <input type="hidden" name="productID" value="<%= request.getParameter("productID") %>">
     Car Name: <input type="text" name="name" value="<%= request.getParameter("name") %>"><br>
-    Category: 
+    Category:
     <select name="category">
         <option value="Luxury">Luxury Car</option>
         <option value="Sports">Sports Car</option>

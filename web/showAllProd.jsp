@@ -31,8 +31,8 @@
         <th>Category</th>
         <th>Year</th>
         <th>Price</th>
-        <th>Photo</th>
         <th>Spec</th>
+        <th>Photo</th>
         <th colspan="2">Edit</th>
     </tr>
         <% while(resultset != null && resultset.next()){ %>
@@ -42,8 +42,8 @@
         <td> <%= resultset.getString("category") %></td>
         <td> <%= resultset.getString("year") %></td>
         <td> <%= resultset.getString("price") %></td>
-        <td> <%= resultset.getString("photo") %></td>
         <td> <%= resultset.getString("spec") %></td>
+        <td> <img src="<%= resultset.getString("photo") %>"></td>
         <td class="button">
             <form method="post" action="updateProduct.jsp">
                 <input type="hidden" name="productID" value="<%= resultset.getString("productID") %>">
@@ -52,7 +52,6 @@
                 <input type="hidden" name="year" value=" <%= resultset.getString("year") %>">
                 <input type="hidden" name="price" value="<%= resultset.getString("price") %>">
                 <input type="hidden" name="photo" value="<%= resultset.getString("photo") %>">
-                <input type="hidden" name="spec" value="<%= resultset.getString("spec") %>">
                 <input type="submit" value="Update">
             </form>
         </td>

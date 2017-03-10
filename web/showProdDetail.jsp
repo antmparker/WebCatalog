@@ -12,7 +12,6 @@
 </head>
 <body>
 <%
-
     //you need this for JDBC with MySQL in version 5
     Class.forName("com.mysql.jdbc.Driver");
     Connection connection = DriverManager.getConnection(
@@ -30,8 +29,8 @@
         <th>Category</th>
         <th>Year</th>
         <th>Price</th>
-        <th>Photo</th>
         <th>Spec</th>
+        <th>Photo</th>
         <th colspan="2">Edit</th>
     </tr>
         <% while(resultset != null && resultset.next()){ %>
@@ -42,8 +41,8 @@
         <td> <%= resultset.getString("category") %></td>
         <td> <%= resultset.getString("year") %></td>
         <td> <%= resultset.getString("price") %></td>
-        <td> <%= resultset.getString("photo") %></td>
         <td> <%= resultset.getString("spec") %></td>
+        <td> <%= resultset.getString("photo") %></td>
 
     </TR>
         <% }
@@ -58,6 +57,5 @@
       connection.close();
     }
   %>
-
 </body>
 </html>

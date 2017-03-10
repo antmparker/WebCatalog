@@ -10,14 +10,13 @@
 <html>
 <head>
 
-    <title>Update Confirmed <%= request.getParameter("id") %>
+    <title>Update Confirmed <%= request.getParameter("name") %>
 
     </title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
 
 </head>
-
 <body>
 
 <%
