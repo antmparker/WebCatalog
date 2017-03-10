@@ -66,13 +66,14 @@
 </ul>
 <h1>C and A New Car Sales Web Catalog</h1>
 <h2> 0 </h2>
-<table BORDER="1"> <%--creating a table for the query--%>
+<table BORDER="1">
+    <tr>
     <th>ID</th>
     <th>Name</th>
     <th>Category</th>
     <th>Year</th>
     <th>Price</th>
-</table>
+
     <th colspan="2">View Details</th>
     </tr>
         <% while(resultset != null && resultset.next()){ %>

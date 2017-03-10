@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: user
-  Date: 3/8/17
-  Time: 3:12 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
 <head>
@@ -66,13 +60,14 @@
 </ul>
 <h1>C and A New Car Sales Web Catalog</h1>
 <h2> 0 </h2>
-<table BORDER="1"> <%--creating a table for the query--%>
+<table BORDER="1">
+    <tr>
     <th>ID</th>
     <th>Name</th>
     <th>Category</th>
     <th>Year</th>
     <th>Price</th>
-</table>
+
     <th colspan="2">View Details</th>
     </tr>
         <% while(resultset != null && resultset.next()){ %>

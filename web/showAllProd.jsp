@@ -92,6 +92,7 @@
                 <input type="hidden" name="category" value="<%= resultset.getString("category") %>">
                 <input type="hidden" name="year" value=" <%= resultset.getString("year") %>">
                 <input type="hidden" name="price" value="<%= resultset.getString("price") %>">
+                <input type="hidden" name="spec" value="<%= resultset.getString("spec") %>">
                 <input type="hidden" name="photo" value="<%= resultset.getString("photo") %>">
                 <input type="submit" value="Update">
             </form>
